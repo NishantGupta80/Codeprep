@@ -35,7 +35,7 @@ mongoose
   .catch((err) => console.log(err));
 
 const openai = new OpenAi({
-  apiKey: "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",
+  apiKey : process.env.API_KEY,
 });
 
 
