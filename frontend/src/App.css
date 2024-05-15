@@ -781,3 +781,13 @@ button:hover {
   color:#45a049;
   cursor: pointer; 
 }
+
+
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}

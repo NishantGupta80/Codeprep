@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import {NavLink} from 'react-router-dom';
-import Userhomepage from '../Components/Userhomepage';
+// import Userhomepage from '../Components/Userhomepage';
 
 const Navbar = () => {
   return (

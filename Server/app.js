@@ -13,6 +13,7 @@ dotenv.config({ path: "./config.env" });
 require("./db/connection");
 app.use(express.json());
 app.use(require("./router/auth"));
+app.use(cors());
 
 const url = require("url");
 
@@ -110,7 +111,7 @@ app.get("/getResponse", async (req, res) => {
     messages: [
       {
         role: "user",
-        content: `Give me 5 Mcq Question of ${name} in this Format- question:options and please give me the content part in json format`,
+        content: `Give me 5 Mcq Question of ${name} in this Format- question:options:rightOptionIndex and please give me the content part in json format`,
       },
     ],
   });
